@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$bungee: Bungee;
+$primary-font: Roboto;
+$secondary-font: Arial;
+$max-width: 35rem;
+$story-font-size: 1rem;
+$title-font-size: 4rem;
+$subtitle-font-size: 2rem;
+
+%paddings {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @extend %paddings;
+}
+
+header {
+  #home {
+    font-family: $bungee;
+    @extend %paddings;
+  }
+  #date {
+    @extend %paddings;
+  }
+  #byline {
+    @extend %paddings;
+  }
+  #title {
+    @extend %paddings;
+    font-size: $title-font-size;
+  }
+  #subtitle {
+    @extend %paddings;
+    font-size: $subtitle-font-size;
+  }
+}
+
+section {
+  font-family: $primary-font;
+  padding: 0;
+  max-width: $max-width;
+  margin: 0 auto;
+
+    .story {
+      font-size: $story-font-size;
+    }
+}
+
+.methodology {
+  max-width: 30rem;
+  text-align: left;
+  #data-and-methodology {
+    margin: 0 auto;
+    text-align: center;
+  }
+}

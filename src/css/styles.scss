@@ -29,16 +29,20 @@ header {
     @extend %paddings;
   }
   #date {
+    font-family: $bungee;
     @extend %paddings;
   }
   #byline {
+    font-family: $bungee;
     @extend %paddings;
   }
   #title {
+    font-family: $bungee;
     @extend %paddings;
     font-size: $title-font-size;
   }
   #subtitle {
+    font-family: $bungee;
     @extend %paddings;
     font-size: $subtitle-font-size;
   }
